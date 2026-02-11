@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout 9 - Flex</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+    }
+
+    .container{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .topo,
+    .linha1,
+    .linha2{
+      height: 33.33%;
+      display: flex;
+    }
+
+    .topo{
+      width: 100%;
+      background: pink;
+    }
+
+    .linha1 div,
+    .linha2 div{
+      width: 33.33%;
+      height: 100%;
+    }
+
+    .q1{ 
+        background: #ffb3d9; 
+    }
+    .q2{ 
+        background: #ff80bf; 
+    }
+    .q3{ 
+        background: #ff4da6; 
+    }
+    .q4{ 
+        background: #ff9999; 
+    }
+    .q5{ 
+        background: #ff6666; 
+    }
+    .q6{ 
+        background: #ff3333; 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="topo"></div>
+
+    <div class="linha1">
+      <div class="q1"></div>
+      <div class="q2"></div>
+      <div class="q3"></div>
+    </div>
+
+    <div class="linha2">
+      <div class="q4"></div>
+      <div class="q5"></div>
+      <div class="q6"></div>
+    </div>
+
+  </div>
+</body>
+</html>

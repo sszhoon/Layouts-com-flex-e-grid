@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout 9 - Grid</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+    }
+
+    .container{
+      height: 100%;
+      display: grid;
+
+      grid-template-columns: 33.33% 33.33% 33.33%;
+      grid-template-rows: 33.33% 33.33% 33.33%;
+
+      grid-template-areas:
+        "topo topo topo"
+        "meio1 meio2 meio3"
+        "baixo1 baixo2 baixo3";
+    }
+
+    .topo{ 
+        grid-area: topo; 
+        background: rgb(255, 170, 221); 
+    }
+
+    .meio1{ 
+        grid-area: meio1; 
+        background: rgb(255, 154, 194); 
+    }
+    .meio2{ 
+        grid-area: meio2; 
+        background: rgb(255, 128, 179); 
+    }
+    .meio3{ 
+        grid-area: meio3; 
+        background: rgb(255, 61, 138); 
+    }
+
+
+    .baixo1{ 
+        grid-area: baixo1; 
+        background: rgb(255, 135, 135); 
+    }
+    .baixo2{ 
+        grid-area: baixo2; 
+        background: rgb(255, 104, 104);
+    }
+    .baixo3{ 
+        grid-area: baixo3; 
+        background: rgb(255, 60, 60); 
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="topo"></div>
+    <div class="meio1"></div>
+    <div class="meio2"></div>
+    <div class="meio3"></div>
+    <div class="baixo1"></div>
+    <div class="baixo2"></div>
+    <div class="baixo3"></div>
+  </div>
+</body>
+</html>
