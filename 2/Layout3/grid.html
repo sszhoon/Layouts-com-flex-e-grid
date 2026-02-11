@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3 - Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 3%;
+            background-color: black;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #containerUm {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        #containerDois {
+            display: grid;
+            grid-template-rows: 55% 10% 35%;
+        }
+
+        #containerDois {
+            background-color: #e0e0e0;
+        }
+
+        /* Caixas */
+        #caixaUm {
+            background-color: #ff0000;
+            /* Vermelho */
+        }
+
+        #caixaDois {
+            background-color: #00ff00;
+            /* Verde */
+        }
+
+        #caixaTres {
+            background-color: #0000ff;
+            /* Azul */
+        }
+
+        #caixaQuatro {
+            background-color: #ffff00;
+            /* Amarelo */
+        }
+
+        #caixaCinco {
+            background-color: #ff00ff;
+            /* Rosa */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="containerUm">
+        <div id="caixaUm"></div>
+        <div id="caixaDois"></div>
+    </div>
+    <div id="containerDois">
+        <div id="caixaTres"></div>
+        <div id="caixaQuatro"></div>
+        <div id="caixaCinco"></div>
+    </div>
+</body>
+
+</html>

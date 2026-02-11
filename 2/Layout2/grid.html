@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2 - Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            box-sizing: border-box;
+            border-radius: 3%;
+            background-color: black;
+        }
+
+        body {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        #containerUm {
+            display: grid;
+            grid-template-rows: 10% 15% 37.5% 37.5%;
+        }
+
+        #containerDois {
+            display: grid;
+            grid-template-rows: 10% 30% 60%;
+        }
+
+        #containerTres {
+            display: grid;
+            grid-template-rows: 30% 70%;
+        }
+
+        #caixaUm {
+            background-color: #FF5733;
+            /* Laranja Vibrante */
+        }
+
+        #caixaDois {
+            background-color: #33FF57;
+            /* Verde Lima */
+        }
+
+        #caixaTres {
+            background-color: #3357FF;
+            /* Azul Real */
+        }
+
+        #caixaQuatro {
+            background-color: #F333FF;
+            /* Magenta */
+        }
+
+        #caixaCinco {
+            background-color: #FF33A1;
+            /* Rosa Choque */
+        }
+
+        #caixaSeis {
+            background-color: #33FFF5;
+            /* Turquesa */
+        }
+
+        #caixaSete {
+            background-color: #FFC300;
+            /* Amarelo Ouro */
+        }
+
+        #caixaOito {
+            background-color: #581845;
+            /* Vinho Escuro */
+        }
+
+        #caixaNove {
+            background-color: #900C3F;
+            /* Carmesim */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="containerUm">
+        <div id="caixaUm"></div>
+        <div id="caixaDois"></div>
+        <div id="caixaTres"></div>
+        <div id="caixaOito"></div>
+    </div>
+    <div id="containerDois">
+        <div id="caixaQuatro"></div>
+        <div id="caixaCinco"></div>
+        <div id="caixaSeis"></div>
+    </div>
+    <div id="containerTres">
+        <div id="caixaSete"></div>
+        <div id="caixaNove"></div>
+    </div>
+</body>
+
+</html>

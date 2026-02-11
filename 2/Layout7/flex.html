@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 7 - Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 3%;
+            background-color: black;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        .container{
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+        
+        .container2{
+           width: 100%;
+           height: 100%;
+            flex-wrap: wrap; 
+        }
+
+        .container3{
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .quadradogrande{
+            background-color: rgb(244, 197, 227);
+            width: 100%;
+            height: 100%;
+        }
+
+        .topoMeio{
+            background-color: rgb(255, 66, 167);
+            width: 100%;
+            height: 33.3333%;
+        }
+
+        .topoDireita{
+            background-color: rgb(254, 130, 196);
+            width: 100%;
+            height: 33.3333%;
+        }
+
+        .meioMeio{
+            background-color: rgb(193, 88, 146);
+            width: 100%;
+            height: 33.3333%;
+        }
+
+        .meioDireito{
+            background-color: rgb(139, 51, 98);
+            width: 100%;
+            height: 33.3333%;
+        }
+
+        .baixoMeio{
+            background-color: rgb(127, 8, 70);
+            width: 100%;
+            height: 33.3333%;
+            
+        }
+
+        .baixoDireito{
+            background-color: rgb(93, 7, 52);
+            width: 100%;
+            height: 33.3333%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="quadradogrande"></div>
+        </div>
+
+        <div class="container2">
+        <div class="topoMeio"></div>
+        <div class="meioMeio"></div>
+        <div class="baixoMeio"></div>
+        </div>
+
+        <div class="container3">
+        <div class="topoDireita"></div>
+        <div class="meioDireito"></div>
+        <div class="baixoDireito"></div>
+        </div>
+</body>
+</html>

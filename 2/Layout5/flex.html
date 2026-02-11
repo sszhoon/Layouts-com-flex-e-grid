@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 5 - Flex</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0;
+        box-sizing: border-box;
+        border-radius: 35px;
+    }
+
+    body {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+    }
+
+    #containerUm {
+        height: 100%;
+        width: 33.3%;
+    }
+
+    #containerDois {
+        height: 100%;
+        width: 33.3%;
+    }
+
+    #containerTres {
+        width: 33.3%;
+        height: 100%;
+    }
+
+    #caixaUm {
+        background-color: #ff595e;
+        height: 30%;
+        width: 100%;
+        align-self: flex-start;
+        justify-self: start;
+    }
+
+    #caixaDois {
+        background-color: #ffca3a;
+        height: 70%;
+        width: 100%;
+        align-self: flex-end;
+    }
+
+    #caixaTres {
+        background-color: #8ac926;
+        height: 60%;
+        width: 100%;
+    }
+
+    #caixaQuatro {
+        background-color: #1982c4;
+        height: 30%;
+        width: 100%;
+    }
+
+    #caixaCinco {
+        background-color: #6a4c93;
+        height: 10%;
+        width: 100%;
+    }
+
+    #caixaSeis {
+        background-color: #4267b2;
+        height: 50%;
+        width: 100%;
+    }
+
+    #caixaSete {
+        background-color: #ff924c;
+        height: 50%;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <div id="containerUm">
+        <div id="caixaUm"></div>
+        <div id="caixaDois"></div>
+    </div>
+
+    <div id="containerDois">
+        <div id="caixaTres"></div>
+        <div id="caixaQuatro"></div>
+        <div id="caixaCinco"></div>
+    </div>
+
+    <div id="containerTres">
+        <div id="caixaSeis"></div>
+        <div id="caixaSete"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4 - Flex</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border-radius: 3%;
+            background-color: black;
+        }
+
+        body{
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .topoEsquerdo{
+            background-color: rgb(182, 190, 255);
+            width: 50%;
+            height: 10%;
+            
+        }
+
+        .topoDireita{
+            background-color: rgb(157, 166, 233);
+            width: 50%;
+            height: 10%;
+        }
+
+        .meioEsquerdo{
+            background-color: rgb(179, 242, 255);
+            width: 50%;
+            height: 30%;
+        }
+
+        .meioDireito{
+            background-color: rgb(129, 226, 246);
+            width: 50%;
+            height: 30%;
+        }
+
+        .baixoEsquerda{
+            background-color: rgb(152, 255, 240);
+            width: 50%;
+            height: 60%;
+        }
+
+        .baixoDireito{
+            background-color: rgb(97, 209, 192);
+            width: 50%;
+            height: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="topoEsquerdo"></div>
+        <div class="topoDireita"></div>
+
+        <div class="meioEsquerdo"></div>
+        <div class="meioDireito"></div>
+
+        <div class="baixoEsquerda"></div>
+        <div class="baixoDireito"></div>
+    </div>
+</body>
+</html>
