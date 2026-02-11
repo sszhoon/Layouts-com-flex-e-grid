@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Layout 8 - Grid</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      height: 100vh;
+    }
+
+    .container{
+      height: 100%;
+      display: grid;
+
+      grid-template-columns: 30% 35% 35%;
+      grid-template-rows: 30% 35% 35%;
+
+      grid-template-areas:
+        "caixaum topo2 topo3"
+        "caixaum meio2 meio3"
+        "caixaum baixo2 baixo3";
+    }
+
+    .caixaum{ 
+        grid-area: caixaum; 
+        background: rgb(4, 16, 81); 
+    }
+    .topo2{ 
+        grid-area: topo2; 
+        background: rgb(69, 34, 123); 
+    }
+    .topo3{ 
+        grid-area: topo3; 
+        background: rgb(188, 160, 237); 
+    }
+
+    .meio2{ 
+        grid-area: meio2; 
+        background: rgb(38, 19, 121); 
+    }
+    .meio3{ 
+        grid-area: meio3; 
+        background: rgb(121, 121, 230); 
+    }
+
+    .baixo2{ 
+        grid-area: baixo2; 
+        background: rgb(0, 170, 255); 
+    }
+    .baixo3{ 
+        grid-area: baixo3; 
+        background: rgb(160, 230, 255); 
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="caixaum"></div>
+    <div class="topo2"></div>
+    <div class="topo3"></div>
+    <div class="meio2"></div>
+    <div class="meio3"></div>
+    <div class="baixo2"></div>
+    <div class="baixo3"></div>
+  </div>
+</body>
+</html>
